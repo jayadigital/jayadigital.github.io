@@ -101,7 +101,7 @@
 .horizontal_line {
 }
 .hint_text {
-  font-family:'Roboto';
+  font-family:'Roboto Regular', 'Roboto';
   font-weight:400;
   font-style:normal;
   font-size:16px;
@@ -111,7 +111,7 @@
   text-align:left;
 }
 .headline {
-  font-family:'Roboto';
+  font-family:'Roboto Regular', 'Roboto';
   font-weight:400;
   font-style:normal;
   font-size:24px;
@@ -125,7 +125,7 @@
   color:rgba(0, 0, 0, 0.866666666666667);
 }
 .secondary_text_dark {
-  font-family:'Roboto';
+  font-family:'Roboto Regular', 'Roboto';
   font-weight:400;
   font-style:normal;
   font-size:14px;
