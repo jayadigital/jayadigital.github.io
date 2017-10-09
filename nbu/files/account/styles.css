@@ -5173,7 +5173,7 @@
   border-width:0px;
   position:absolute;
   left:10px;
-  top:12px;
+  top:10px;
   width:229px;
   word-wrap:break-word;
 }
@@ -5980,6 +5980,9 @@
   text-align:left;
   border-color:transparent;
   outline-style:none;
+}
+#u70393_input {
+  font-family:'Roboto';
 }
 #u70394 {
   border-width:0px;
@@ -10323,6 +10326,9 @@ body.a {  background-color:rgba(255, 255, 255, 1);
   border-color:transparent;
   outline-style:none;
 }
+#u70393_input.a {
+  font-family:'Roboto';
+}
 #u70395.a {
   left:500px;
   top:1678px;
@@ -14403,6 +14409,9 @@ body.b {  background-color:rgba(255, 255, 255, 1);
   text-align:left;
   border-color:transparent;
   outline-style:none;
+}
+#u70393_input.b {
+  font-family:'Roboto';
 }
 #u70395.b {
   left:620px;
