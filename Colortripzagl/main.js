@@ -1,3 +1,19 @@
+//$(document).ready(function(){
+//  var input_field = document.querySelectorAll('.input-group');
+//  for (let i = 0; i < input_field.length; i++){
+//    input_field[i].addEventListener('focusin', (e) => {
+//      if (e.target.type == 'text') {
+//        input_field[i].classList.add('active-input'); 
+//      }
+//    });
+//    input_field[i].addEventListener('focusout', (e) => {
+//      if(!e.target.value){
+//        input/_field[i].classList.remove('active-input');
+//      }
+//    });
+//  }
+//});
+
 $(document).ready(function(){
   var input_field = document.querySelectorAll('.input-group');
   for (let i = 0; i < input_field.length; i++){
@@ -8,11 +24,12 @@ $(document).ready(function(){
     });
     input_field[i].addEventListener('focusout', (e) => {
       if(!e.target.value){
-        input/_field[i].classList.remove('active-input');
+        input_field[i].classList.remove('active-input');
       }
     });
   }
 });
+
 
 $(function() {
   $('.dropdown ul li').on('click', function() {
@@ -24,6 +41,15 @@ $(function() {
     $(this).addClass('selected');
   });
 });
+
+//$(function() {
+//  $('.dropdown').on('click', function() {
+//	  $('.dropdown ul li').addClass('select-option');
+//	  if($('.dropdown ul li').is('selected')){
+//		  $('.dropdown ul li').removeClass('select-option');
+//	  }
+//  });
+//});
 
 //$(function() {
 //  $('.form-btn').on('click', function() {
