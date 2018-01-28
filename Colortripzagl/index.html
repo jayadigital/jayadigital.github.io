@@ -3,23 +3,25 @@
 
 <head>
 	<meta charset="UTF-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Color Trip Moving</title>
 	<link rel="stylesheet" href="main.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-
 	<script src="main.js"></script>
 	<script src="select.js"></script>
 </head>
 
 <body>
+	
+	<section class="wrapper">
 	<header class="header">
 		<img src="img/Logo.png" alt="colortrip">
-		<span>+475-556-62-35</span>
+		<span class="number">+475-556-62-35</span>
 	</header>
 
 	<section class="main">
 <!--		<img class="men" src="img/men.png" alt="">-->
-		<h1>comming soon</h1>
+		<h1>coming soon</h1>
 	
 	
 		<form action="" class="form-personal-info">
@@ -29,12 +31,12 @@
 				<div class="form-body__item">
 					<div class="input-group">
 						<!-- INPUT -->
-						<span class="required"><input type="text" class="input-group__input"></span>
+						<span class="required"><input placeholder="Enter your adress" type="text" class="input-group__input"></span>
 						<label class="input-group__label">From</label>
 					</div>
 					<div class="input-group">
 						<!-- INPUT -->
-						<span class="required"><input type="text" class="input-group__input"></span>
+						<span class="required"><input placeholder="Where to go" type="text" class="input-group__input"></span>
 						<label class="input-group__label">To</label>
 					</div>
 
@@ -46,6 +48,7 @@
 					
 						
 					<div class="input-group dropdown">
+					<span class="required"><input disabled type="text" class="input-group__input"></span>
 					<label data-value="" class="input-group__label">Type</label>
 						<ul>
 							<li data-value="1">Studio</li>
@@ -65,6 +68,7 @@
 		</form>
 		
 	
+	</section>
 	</section>
 </body>
 

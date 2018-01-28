@@ -16,14 +16,14 @@ body {
 /*	background: linear-gradient(100deg, #8870F2, #D174F4, #F77074,#F7BA5F, #F37949, #7BFAF4, #8FF663);*/
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
-	background-size: cover;
+/*	background-size: cover;*/
+	-webkit-background-size: 100vh;
+	background-size: 205vh;
 	font-family: Gotham Pro, Aril, sans-serif;
 	font-style: Bold;
-	font-size: 32px;
 	margin: 0;
 	padding: 0;
 }
-
 
 
 @font-face {
@@ -38,16 +38,20 @@ body {
 h1 {
 	font-family: Gotham Pro, Aril, sans-serif;
 	font-style: bold;
-	font-size: 230px;
+/*	font-size: 200px;*/
+	font-size: 14vw;
 	text-align: center;
 	color: #fff;
+	margin: 0;
 	margin-top: 5%;
+/*	background-color: red;*/
 }
 
 
 .header {
 	display: flex;
 	justify-content: space-between;
+/*	background-color: pink;*/
 }
 
 .header img {
@@ -55,12 +59,15 @@ h1 {
 	margin-top: 15px;
 }
 
-.header span {
+.header .number {
 	margin-top: 50px;
 	margin-right: 50px;
 	color: #9B51E0;
+	font-size: 35px;
+	font-weight: 600;
 }
 
+/*
 .men{
 	position: absolute;
 	width: 100%;
@@ -68,6 +75,7 @@ h1 {
 	z-index: -1;
 	height: 100%;
 }
+*/
 
 a,
 button,
@@ -85,26 +93,30 @@ input[disabled],
 	margin-top: 50px;
 	width: 22%;
 	height: 80px;
-	font-size: 2rem;
+	font-size: 2em;
 	font-weight: bold;
-	background-color: #46297F;
+	background-color: #fff;
+/*	background-color: #46297F;*/
+	border-radius: 10px;
 	border: none;
 	outline: none;
-	color: white;
-	box-shadow: 18px 18px 0px #000; /*#FCa12a*/
+	color: #46297F;
+	box-shadow: 1px 2px 13px 1px rgba(0, 0, 0, 0.7);
 	transition: .2s all ease;
 }
 
 .form-btn:hover{
-	margin-top: 30px;
+	margin-top: 45px;
 	transition: .3s all ease;
-	box-shadow: 0 0 0;
-	background-color: rgb(48, 25, 95);
+	box-shadow: 1px 8px 13px 2px rgba(0, 0, 0, 0.7);
+	background-color: #46297F;
+	color: white;
 }
 
 .form-body {
+/*	background-color: blue;*/
 	width: 80%;
-	margin: -5% auto;
+	margin: 3% auto;
 }
 
 .form-body__item {
@@ -122,7 +134,7 @@ input[disabled],
 	position: relative;
 	width: 22%;
 	margin-left: 3%;
-	border-bottom: 8px solid white;
+	border-bottom: 5px solid white;
 }
 
 .form-body .input-group:nth-child(1){
@@ -145,6 +157,18 @@ input[disabled],
 	position: relative;
 	color: white;
 }
+
+.form-body .input-group__input::placeholder{
+	color: transparent;
+	transition: .3s all ease;
+	font-size: .7em;
+}
+
+.form-body .input-group__input:focus::placeholder{
+/*	color: #46297F;*/
+	color: #ffffff;
+}
+
 
 .form-body .input-group__input--select{
 	-moz-appearance: none;
@@ -180,7 +204,7 @@ input[disabled],
 }
 
 .dropdown ul li {
-	font-size: .6em;
+	font-size: 1em;
 	margin-left: -40px;
 	padding: 15px 0px 15px 15px;
 	background: white;
@@ -215,7 +239,7 @@ box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.50);
 
 
 .form-body .input-group__label {
-	font-weight: normal;
+	font-weight: 600;
 	position: absolute;
 	pointer-events: none;
 	left: 0;
@@ -244,14 +268,16 @@ box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.50);
 
 
 @media screen and (max-width:1600px){
+/*
 	h1{
-	 font-size: 6em;
+	 font-size: 7em;
 	}
+*/
 }
 
 @media screen and (max-width:1024px){
 	.main h1{
-		font-size: 3em;
+		font-size: 9em;
 	}
 	
 	.form-body .input-group{
@@ -259,19 +285,80 @@ box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.50);
 		margin-left: 0;
 		margin-top: 8%;
 	}
+	
+	.main h1{
+		margin-top: 2%;
+		font-size: 13vw;
+	}
 }
 
 @media screen and (max-width:768px){
 	
 	.main h1{
-		font-size: 3em;
+		margin-top: 2%;
+		font-size: 14vw;
+	}
+	
+	.form-body{
+		width: 90%;
+		margin: 30% auto;
 	}
 	
 	.form-body .input-group{
 		width: 100%;
 		margin-left: 0;
-		margin-top: 8%;
+		margin-top: 25px;
+/*		margin-top: 25%;*/
 	}
 	
+	.header img {
+	margin: 2%;
+	width: 50%;
+		height: 50%;
+}
+	
+	.header .number{
+		margin: 2.5vh;
+		font-size: 5vw;
+	}
+	
+	.form-body .input-group__label {
+	font-size: 1.5em;
+	}
+
+
+	.form-body .active-input label {
+	top: -20px;
+	font-size: 1.2em;
+	}
+	
+	
+	.form-body .input-group__input {
+	font-size: 1.5em;
+	}
+	
+	.form-btn {
+	margin-top: 25px;
+	width: 100%;
+	height: 55px;
+	font-size: 1.2em;
+}
+	
+	.form-btn:hover{
+	margin-top: 25px;
+}
+	
+	.dropdown ul {
+	top: -750%;
+
+}
+	
+	.dropdown ul li {
+		font-size: 1em;
+	}
+	
+
+
+
 }
 
