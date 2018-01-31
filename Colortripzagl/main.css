@@ -12,13 +12,10 @@ html {
 body {
 
 	background-image: url(img/bg.png);
-	background-position: center 0px;
-/*	background: linear-gradient(100deg, #8870F2, #D174F4, #F77074,#F7BA5F, #F37949, #7BFAF4, #8FF663);*/
 	background-repeat: no-repeat;
-	-webkit-background-size: cover;
-/*	background-size: cover;*/
-	-webkit-background-size: 100vh;
-	background-size: 205vh;
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
 	font-family: Gotham Pro, Aril, sans-serif;
 	font-style: Bold;
 	margin: 0;
@@ -38,44 +35,27 @@ body {
 h1 {
 	font-family: Gotham Pro, Aril, sans-serif;
 	font-style: bold;
-/*	font-size: 200px;*/
 	font-size: 14vw;
 	text-align: center;
 	color: #fff;
 	margin: 0;
 	margin-top: 5%;
-/*	background-color: red;*/
+	animation-duration: 1s;
+ 	animation-delay: 1s;
 }
-
 
 .header {
 	display: flex;
 	justify-content: space-between;
-/*	background-color: pink;*/
 }
 
 .header img {
+	animation-duration: 1s;
+ 	animation-delay: .3s;
 	margin-left: 50px;
 	margin-top: 15px;
 }
 
-.header .number {
-	margin-top: 50px;
-	margin-right: 50px;
-	color: #9B51E0;
-	font-size: 35px;
-	font-weight: 600;
-}
-
-/*
-.men{
-	position: absolute;
-	width: 100%;
-	top: 0;
-	z-index: -1;
-	height: 100%;
-}
-*/
 
 a,
 button,
@@ -89,227 +69,73 @@ input[disabled],
 	cursor: not-allowed !important;
 }
 
-.form-btn {
-	margin-top: 50px;
-	width: 22%;
-	height: 80px;
-	font-size: 2em;
+
+.buttons-wrap{
+	margin-top: 5%;
+	display: flex;
+	justify-content: center;
+	
+}
+
+.btn{
+	float: left;
+	display: flex;
+	width: 300px;
+	padding: 30px 0;
+	font-size: 26px;
 	font-weight: bold;
 	background-color: #fff;
-/*	background-color: #46297F;*/
 	border-radius: 10px;
 	border: none;
 	outline: none;
 	color: #46297F;
 	box-shadow: 1px 2px 13px 1px rgba(0, 0, 0, 0.7);
 	transition: .2s all ease;
+	text-decoration: none;
+	justify-content: center;
+	align-items: center;
+
 }
 
-.form-btn:hover{
-	margin-top: 45px;
+.btn-mail{
+	animation-duration: 1s;
+ 	animation-delay: 1.2s;
+}
+
+
+.btn-phone{
+	margin-left: 50px;
+	animation-duration: 1s;
+ 	animation-delay: 1.4s;
+}
+
+
+.btn-mail:hover{
 	transition: .3s all ease;
 	box-shadow: 1px 8px 13px 2px rgba(0, 0, 0, 0.7);
 	background-color: #46297F;
 	color: white;
 }
 
-.form-body {
-/*	background-color: blue;*/
-	width: 80%;
-	margin: 3% auto;
-}
-
-.form-body__item {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: flex-end;
-/*	  justify-content: space-between;*/
-/*
-	margin-top: 50px;
-	margin-bottom: 50px;
-*/
-}
-
-.form-body .input-group {
-	position: relative;
-	width: 22%;
-	margin-left: 3%;
-	border-bottom: 5px solid white;
-}
-
-.form-body .input-group:nth-child(1){
-	margin-left: 0;
-}
-
-.form-body .input-group--full-input {
-	width: 100%;
-}
-
-.form-body .input-group__input {
-	width: 100%;
-	display: block;
-	background: none;
-	border: none;
-	outline: none;
-	padding: 8px 0px;
-	font-size: 2rem;
-	line-height: 21px;
-	position: relative;
+.btn-phone:hover{
+	transition: .3s all ease;
+	box-shadow: 1px 8px 13px 2px rgba(0, 0, 0, 0.7);
+	background-color: #46297F;
 	color: white;
 }
 
-.form-body .input-group__input::placeholder{
-	color: transparent;
-	transition: .3s all ease;
-	font-size: .7em;
-}
 
-.form-body .input-group__input:focus::placeholder{
-/*	color: #46297F;*/
-	color: #ffffff;
-}
-
-
-.form-body .input-group__input--select{
-	-moz-appearance: none;
-	-webkit-appearance: none;
-	appearance: none;
-                    
-}
-
-.form-body .input-group__input--select option:hover {
-  background: black;
-  color: red;
-}
-
-.form-body .input-group__input--select:focus{
-	color: #9B51E0;
 	
-}
-
-.dropdown{
-	position: relative;
-}
-
-.dropdown ul {
-  list-style: none;
-  position: absolute;
-	top: -353%;
-  width: 100%;
-	display: none;
-	opacity: 0;
-	box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.50);
-	transition: .2s all ease;
-
-}
-
-.dropdown ul li {
-	font-size: 1em;
-	margin-left: -40px;
-	padding: 15px 0px 15px 15px;
-	background: white;
-  overflow: hidden;
-  cursor: pointer;
-}
-
-.dropdown ul li:hover,
-.dropdown ul li.selected {
-  background: #9B51E0;
-  color: white;
-}
-
-.dropdown:hover ul {
-	display: block;
- opacity: 1;
-	transition: .3s all ease;
-}
-
-/*
-.select-option{
- padding-bottom: 50px;
-}
-*/
-
-/*
-.dropdown:hover ul{
-box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.50);
-}
-*/
-
-
-
-.form-body .input-group__label {
-	font-weight: 600;
-	position: absolute;
-	pointer-events: none;
-	left: 0;
-	font-size: 1.8rem;
-	color: white;
-	top: 5px;
-	transition: 0.2s ease all;
-}
-
-
-.form-body .active-input label {
-	top: -20px;
-	font-size: 1.4rem;
-}
-
-
-.form-body .form-error {
-	border-color: red;
-}
-
-.form-body .form-error label {
-	top: -20px;
-	font-size: 1.4rem;
-	color: red;
-}
-
-
-@media screen and (max-width:1600px){
-/*
-	h1{
-	 font-size: 7em;
-	}
-*/
-}
-
-@media screen and (max-width:1024px){
-	.main h1{
-		font-size: 9em;
-	}
-	
-	.form-body .input-group{
-		width: 50%;
-		margin-left: 0;
-		margin-top: 8%;
-	}
-	
-	.main h1{
-		margin-top: 2%;
-		font-size: 13vw;
-	}
-}
 
 @media screen and (max-width:768px){
 	
+    
+	
 	.main h1{
-		margin-top: 2%;
-		font-size: 14vw;
+		margin-top: 15%;
+		font-size: 5rem;
 	}
 	
-	.form-body{
-		width: 90%;
-		margin: 30% auto;
-	}
-	
-	.form-body .input-group{
-		width: 100%;
-		margin-left: 0;
-		margin-top: 25px;
-/*		margin-top: 25%;*/
-	}
 	
 	.header img {
 	margin: 2%;
@@ -317,48 +143,58 @@ box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.50);
 		height: 50%;
 }
 	
-	.header .number{
-		margin: 2.5vh;
-		font-size: 5vw;
+	
+	.buttons{
+		margin-top: 10%;
 	}
 	
-	.form-body .input-group__label {
-	font-size: 1.5em;
-	}
-
-
-	.form-body .active-input label {
-	top: -20px;
-	font-size: 1.2em;
+	.btn{
+		float: none;
+		width: 180px;
+		padding: 20px 0;
+		font-size: 18px;
 	}
 	
-	
-	.form-body .input-group__input {
-	font-size: 1.5em;
-	}
-	
-	.form-btn {
-	margin-top: 25px;
-	width: 100%;
-	height: 55px;
-	font-size: 1.2em;
-}
-	
-	.form-btn:hover{
-	margin-top: 25px;
-}
-	
-	.dropdown ul {
-	top: -750%;
-
-}
-	
-	.dropdown ul li {
-		font-size: 1em;
+	.btn-phone{
+		margin-left: 0;
+		margin-top: 10%;
 	}
 	
 
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
