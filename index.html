@@ -1,17 +1,68 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>JAYA DIGITAL</title>
-	<link rel="stylesheet" href="main.css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:900" rel="stylesheet"> 
-</head>
-<body>
-	<div class="container">
-		<video class="eye" autoplay="true" loop >
-			<source src="logo2.mp4" type='video/mp4;'>
-		</video>
-		<h1>JAYA.DIGITAL</h1>
-	</div>
-</body>
-</html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>JayaLanding</title><base href="/"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" type="image/x-icon" href="favicon.ico"><style>@font-face {
+      font-family: "FontAwesome";
+      src:         url('./fonts/FontAwesome.otf') format("truetype");
+    }
+
+    @font-face {
+      font-family: "GothamProBlack";
+      src:         url('./fonts/GothamProBlack.ttf') format("truetype");
+    }
+
+    @font-face {
+      font-family: "ProximaNova";
+      src:         url('./fonts/Proxima Nova Regular.otf') format("truetype");
+    }
+
+    @keyframes appearLogo {
+      0% {
+        opacity: 0;
+      }
+      70% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+
+    @keyframes appear {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .index-loader {
+      position:    absolute;
+      top:         0;
+      right:       0;
+      bottom:      0;
+      left:        0;
+      width:       100%;
+      /*background:  black;*/
+      animation:   appear ease 1s;
+      text-align:  center;
+      padding-top: 40vh;
+    }
+
+    .body-wrapper {
+      position:   absolute;
+      top:        0;
+      right:      0;
+      bottom:     0;
+      left:       0;
+      width:      100%;
+      z-index:    -50;
+      background: black;
+      animation:  appear ease 1s;
+    }
+
+    .index-loader > img {
+      display:   inline-block;
+      margin:    0 auto;
+      width:     90%;
+      max-width: 150px;
+      animation: appearLogo ease 3s infinite;
+    }</style><link href="styles.1971db078c5ca1857acc.bundle.css" rel="stylesheet"/></head><body><div class="body-wrapper"></div><jaya-root><div class="index-loader"><img src="./assets/logo_shadow.png" class="index-loader" alt="Jaya digital"></div></jaya-root><script type="text/javascript" src="inline.ca7a74cbcdf058249324.bundle.js"></script><script type="text/javascript" src="polyfills.d5d9844bd7fee45e8250.bundle.js"></script><script type="text/javascript" src="scripts.53dd0e33e1e77ad10d8c.bundle.js"></script><script type="text/javascript" src="main.3ba1e8bba10aa5c46154.bundle.js"></script></body></html>
